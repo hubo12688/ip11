@@ -19,19 +19,12 @@ proxies:
     headers:
       Host: edgetunnel-4uw.pages.dev
 - name: 🇮🇪 IE 02 - xiaohe
-  type: vless
-  server: pruritus.patiromer.workers.dev
+  type: ss
+  server: 20.123.34.66
   port: 443
-  uuid: 0659eac3-137b-4002-ba2e-88da4d071235
+  cipher: chacha20-ietf-poly1305
+  password: r5D6YOSrT6kC76ro
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: pruritus.patiromer.workers.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: pruritus.patiromer.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
