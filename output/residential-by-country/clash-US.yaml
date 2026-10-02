@@ -6,20 +6,6 @@ log-level: info
 proxies:
 - name: 🇺🇸 美国 (United States) 01 (家宽) - xiaohe
   type: vless
-  server: 104.21.19.76
-  port: 2096
-  uuid: fee1da7e-a258-4456-8e5e-8ecf6518ed12
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ez-82c7e7.aBoBaBA.WorkeRS.dEv
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoiemxGMEFDU1VDRyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0
-    headers:
-      Host: ez-82c7e7.abobaba.workers.dev
-- name: 🇺🇸 美国 (United States) 02 (家宽) - xiaohe
-  type: vless
   server: 154.17.228.81
   port: 59686
   uuid: 88ee0e1e-a2a2-477e-88ce-4875c058aeba
@@ -38,13 +24,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇺🇸 美国 (United States) 01 (家宽) - xiaohe
-  - 🇺🇸 美国 (United States) 02 (家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇺🇸 美国 (United States) 01 (家宽) - xiaohe
-  - 🇺🇸 美国 (United States) 02 (家宽) - xiaohe
 rules:
 - MATCH,PROXIES
